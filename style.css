@@ -1,0 +1,1094 @@
+:root { 
+    --bg-page: #17212B;        /* midnight blue */ 
+    --button: rgb(124,92,255);
+    --text: white;
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+.a-btn{
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pixel-text{
+    color:var(--text);
+    word-spacing: 5px;
+    line-height: 25px;
+}
+
+body{
+    margin: 0;
+    font-family: "Press Start 2P", monospace;
+    background-color: var(--bg-page);
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0057FF;
+
+    padding: 20px;
+    gap: 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    min-height: 70px;
+    flex-wrap: nowrap;
+}
+
+#toggle{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.Logo{
+    display: flex;
+    justify-content: space-around;
+    
+    margin-left: 50px;
+
+    width: 240px;
+    height: 30px;
+
+    font-size: 25px;
+    font-weight:500;
+}
+
+.navItems{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.homeItems{
+    display: flex;
+    flex-direction: column;
+
+    margin: 50px
+}
+
+.homeItem1, .homeItem2, .homeItem3, .homeItem4, .homeItem5{
+    text-align: center;
+}
+
+.browseBtn{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 30px;
+
+    gap: 50px
+}
+
+.item1btn{
+    width: 200px;
+    height: 50px;
+
+    font-family: "Press Start 2P", monospace;
+    font-size:medium;
+    font-weight: 400;
+    color: black;
+
+    background-color: var(--button);
+
+    border: 2px solid rgb(124, 92, 255);
+    border-radius: 8px;
+
+    box-shadow:      
+        0 0 15px rgba(124, 92, 255, 0.7),
+        0 0 20px rgba(124, 92, 255, 0.4);
+}
+
+.homeItem2{
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+
+.ItemsRow1{
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.ItemRow1, .ItemRow2{
+    font-size: 15px;
+
+    background-color: black;
+    color: white;
+    border: 2px solid var(--button);
+    
+    padding: 20px;
+   
+}
+
+.figurePics{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.figureCard{
+    border: 3px solid var(--button);
+    border-radius: 8px;
+
+    position: relative;
+}
+.trendingCard{
+   width: 300px;
+   height: 250px; 
+}
+
+.cardTitle{
+    padding: 20px;
+    border-top: 3px solid var(--button);
+
+    background-color: black;
+    color: white;
+}
+
+.homeItem4, .homeItem5{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeItem5{
+    margin-bottom: 50px;
+}
+
+.listItem4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+
+    padding: 15px 10px;
+
+    color: white;
+
+    border: 10px double var(--button);
+    background-color: black;
+
+    width: 100%;
+    max-width: 900px;
+}
+
+.subList{
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+
+
+.item4Lists{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer{
+    position: relative;
+
+    background-color: black;
+    color:grey;
+
+    padding: 20px 200px;
+
+    font-size: 10px;
+}
+
+/*Genres Page*/
+.GenresContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    border: 3px solid var(--button);
+    background-color: black;
+
+    max-width: auto;
+    margin: 100px 50px;
+    padding: 20px;
+}
+
+.LearnMore{
+    color: var(--button)
+}
+
+.searchGenres{
+    background-color: var(--button);
+
+    border: 3px solid #F3F7FA;
+    border-radius: 8px;
+
+    max-width: auto;
+    margin: 20px 150px;
+    padding: 20px;
+}
+
+.searchPlace{
+    background-color: black;
+    border: 2px solid #F3F7FA;
+    border-radius: 8px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    min-height: 50px;
+
+    padding: 15px;
+
+}
+
+.searchLabel{
+    color: white;
+}
+
+.search-genre{
+    background-color: #3F4E5D;
+    border: 2px solid #F3F7FA;
+    color: white;
+    font-size: large;
+
+    flex: 1;
+
+    border-radius: 6px;
+
+    min-width: 150px;
+    height: 30px;
+}
+
+.submit-btn{
+    height: 30px;
+    width: 100px;
+
+    background-color: #A9A9A9;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+
+    font-family: "Press Start 2P", monospace;
+}
+
+.popularGenreHeader{
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: repeat(5, auto);
+
+    gap: 80px 30px;
+
+}
+
+.card{
+    border: 3px solid var(--button);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+
+    background-color: black;
+
+    position: relative;
+
+    min-height: auto;
+}
+
+.GameCardTitle{
+    background-color: var(--button);
+    padding: 15px;
+}
+
+.cardContents{
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+    padding: 10px 20px;
+
+}
+
+.GenreDesc {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.PopularGameList{
+    line-height: 15px;
+    font-size: 12px;
+
+    padding-left: 20px;
+}
+
+.featuredGenre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    color: white;
+
+}
+
+.featureGenreContent{
+    
+    background-color: black;
+
+    border: 3px solid var(--button);
+    border-radius: 8px;
+
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featureList{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 10px;
+}
+
+.genresForYou{
+
+    background-color: black;
+    color: white;
+
+    border: 3px solid var(--button);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+
+    max-width: auto;
+
+}
+
+.ListGenresForYou{
+    line-height: 40px;
+}
+
+.genreStatisticsList{
+    background-color: black;
+    color: white;
+
+    border: 3px solid var(--button);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+
+    max-width: auto;
+}
+
+/*Top Game Page*/
+
+.TopGameContainer{
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.topGameContents{
+    background-color: black;
+    border: 10px double var(--button);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin: 50px 0;
+    padding: 10px;
+
+    max-width: 1000px;
+    min-height: 200px;  
+}
+
+.filterGenre{
+    border-top: 2px solid #A9A9A9;
+    border-bottom: 2px solid #A9A9A9;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+
+    margin: 30px 0;
+    padding: 50px 0;
+}
+
+.filterItem{
+    border: 2px solid #0057FF;
+    background-color: black;
+    font-size: 14px;
+    
+    text-align: center;
+    padding: 10px;
+}
+
+.TopRatedGameContent{
+    background-color: black;
+    border: 10px double white;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    max-width: 1300px;
+    margin: 50px auto 100px;
+}
+
+.topRatedGameHeader{
+    margin-top: 30px;
+}
+
+.topRatedCardContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 55px;
+
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom: 40px;
+}
+
+.topRatedGameCard{
+    border: 2px solid white;
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 10px;
+}
+
+.topRatedDesc{
+    font-size: 14px;
+    text-align: start;
+    
+    max-width: 500px;
+}
+
+.topRatedGamePic{
+    border: 1px solid #A9A9A9;
+    max-width: 300px; 
+}
+
+.topRatedP{
+    line-height: 18px;
+}
+
+.gasterBeam {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 50px;
+}
+
+.beam {
+    flex: 1;
+
+    height: 25px;
+    background: white;
+
+    margin-left: -20px;
+    margin-right: -20px;
+
+    z-index: 1;
+}
+
+.lastRatedContents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 50px;
+    margin: 20px 10px 50px;
+
+    position: relative;
+}
+
+.gameOfTheMonth{
+    position: relative;
+    
+    background-color: black;
+    border: 3px solid white;
+
+    max-width: 900px;
+
+    padding: 20px;
+}
+
+.mostPopularGamesThisYear{
+
+    background-color: black;
+    border: 3px solid white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+
+    line-height: 25px;
+
+    padding: 20px 50px;
+
+    width: 100%;
+    max-width: 900px;
+}
+
+.gameComparison{
+    background-color: black;
+    border: 3px solid white;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 900px;
+
+    padding: 20px;
+
+    margin-bottom: 50px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.gameComparison::-webkit-scrollbar {
+    display: none;
+}
+
+.gameComparisonList{
+    list-style: none;
+    
+
+    padding-left: 0;
+    margin: 0 auto;
+
+    line-height: 30px;
+
+    min-width: 900px;
+
+    font-size: 12px;
+}
+
+.comparisonList{
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr;
+
+    align-items: center;
+    text-align: start;
+
+}
+
+.comparisonList:first-child{
+    font-weight: bold;
+}
+
+/*Review Page*/
+
+.reviewPageContainer{
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 50px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    margin: 60px 0;
+}
+
+.gameReview{
+    background-color: black;
+    border: 10px double var(--button);
+
+    padding: 30px;
+
+    max-width: 900px;
+
+    line-height: 20px;
+}
+
+.featuredReviewContent{
+    background-color: black;
+    border: 10px double var(--button);
+
+    text-align: start;
+    padding: 30px;
+
+    max-width: 1000px;
+
+    min-height: 400px;
+    
+    line-height: 20px;
+}
+
+.featuredGameName{
+    color: #E6C35C;
+    text-shadow: 0 0 20px #E6C35C;
+}
+
+.pros, .cons{
+    list-style: none;
+    padding-left: 0;
+}
+.fullReview{
+    color: var(--button);
+}
+
+.reviewsCardsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    background-color: black;
+    border: 3px solid var(--button);
+    padding: 20px;
+
+}
+
+.reviewCard{
+    border: 10px double var(--button);
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+
+    min-height: 300px;
+}
+
+.reviewCardImg{
+    width: 100%;
+    max-width: 300px;
+    border-bottom: 2px solid var(--button);
+}
+
+.reviewCardDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    width: 100%;
+}
+
+.topRatedGamesContainer{
+    background-color: black;
+    border: 10px double var(--button);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 25px;
+    padding: 20px;
+
+    width: 100%;
+    max-width: 1000px;
+}
+
+.quickReviewsContainer{
+    border: 10px double var(--button);
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+
+    max-width: 1000px;
+}
+
+.quickReviewContent{
+    text-align: start;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.quickReviewGameTitle{
+    color: gold;
+}
+
+/*pixel art*/
+.megaManPic{
+    position: absolute;
+
+    transform: translateY(5px);
+
+    width: 100px;
+
+    bottom: 100%;
+    right: 500px;
+
+    image-rendering: pixelated;
+}
+
+.megaManEnemy{
+    position: absolute;
+
+    transform: translateY(7px);
+
+    width: 150px;
+
+    bottom: 100%;
+    right: 300px;
+
+    image-rendering: pixelated;
+}
+
+.SVChicken{
+    position: absolute;
+
+    transform: translateY(5px);
+    transform: scaleY(-1);
+
+    width: 130px;
+
+    top: 100%;
+
+    image-rendering: pixelated;
+}
+
+.DoomGuy{
+    position: absolute;
+
+    width: 80px;
+    bottom: 100%;
+    left: 20px;
+    transform: translateY(-1px);
+    image-rendering: pixelated;
+}
+
+.DanteAndVirgil{
+    position: absolute;
+
+    width: 250px;
+    bottom: 100%;
+    left: 220px;
+    transform: translateY(1px);
+    image-rendering: pixelated;
+}
+
+.gasterLeft, .gasterRight {
+    width: 115px;
+
+    image-rendering: pixelated;
+
+    position: relative;
+    z-index: 2;
+}
+.gasterLeft {
+    transform: rotate(-90deg);
+}
+
+.gasterRight {
+    transform: scaleX(-1);
+    transform: rotate(90deg);
+}
+
+.sans{
+    position: absolute;
+    width: 80px;
+
+    bottom: 100%;
+    left: 50px;
+
+    transform: translateY(9px);
+
+    image-rendering: pixelated;
+}
+
+.frisk{
+    position: absolute;
+    width: 250px;
+
+    right: 10px;
+    bottom: -74px;
+
+    image-rendering: pixelated;
+}
+
+.flowey{
+    position: absolute;
+    width: 50px;
+
+    right: 200px;
+    bottom: 1px;
+
+    image-rendering: pixelated;
+}
+/*responsive*/
+@media (max-width: 1024px){
+
+    .navBar{
+        position: sticky;
+        flex-wrap: nowrap;
+
+        justify-content: space-between;
+    }
+
+    .hamburger{
+        display: block; 
+    }   
+
+    .navItems{
+        background-color: black;
+        position: absolute;
+        width: auto;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        
+
+        gap: 30px;
+
+        max-height: 0;
+        overflow: hidden;
+
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+
+        transition: max-height 0.2s ease;
+    }
+
+    #toggle:checked ~ .navItems{
+        max-height: 350px;
+        padding: 20px 0;
+
+        border: 2px solid var(--button);
+    }
+
+    .footer{
+        max-width: auto;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footerItems{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .figurePics{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*Genre Page*/
+    .searchGenres{
+
+    max-width: auto;
+    margin: auto;
+    padding: auto;
+    }
+
+    /*pixel art*/
+    .SVChicken{
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*pixel art*/
+    .DanteAndVirgil{
+        display: none;
+    }
+    
+    /*Reviews Page*/
+    .reviewsCardsCpntainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    /*Top Game Page*/
+    .filterGenre{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .topRatedGameCard{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topRatedGamePic, .topRatedImg{
+        max-width: auto;
+    }
+
+    /*Reviews Page*/
+    .reviewsCardsCpntainer{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 680px) {
+    /*Reviews Page*/
+    .ratedGameList{
+        font-size: 13px
+    }
+}
+
+@media (max-width: 600px) {
+    /*moblie Genre Page*/
+    .searchPlace {
+        flex-direction: column;
+    }
+
+    .search-genre, .submit-btn {
+        width: 100%;
+    }
+
+    .footerItems{
+        line-height: 15px;
+    }
+
+    /*Top game page*/
+    .filterGenre{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+
+@media (max-width: 570px) {
+    /*Reviews Page*/
+    .ratedGameList{
+        font-size: 10px
+    }
+}
+
+@media (max-width: 480px) {
+    /*Genre Page*/
+    .cardContents {
+        padding: 10px;
+    }
+
+    .GenreDesc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 460px) {
+    /*Reviews Page*/
+    .ratedGameList{
+        font-size: 9px
+    }
+}
