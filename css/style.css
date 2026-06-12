@@ -803,6 +803,63 @@ body{
     color: gold;
 }
 
+.aboutPageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    background-color: black;
+    border: 10px double white;
+
+    color: white;
+
+    padding: 50px 20px;
+    margin: 50px auto;
+
+    max-width: 1700px;
+
+}
+
+.aboutGenreVerseContent{
+    border: 8px solid white;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 1000px;
+    min-height: 220px;
+
+    padding: 20px
+}
+
+.aboutGenreVerseContent p{
+    text-align: start;
+    line-height: 17px;
+}
+
+.whoWeAreContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1000px;
+    min-height: 160px;
+
+    padding: 20px;
+
+    background-color: black;
+}
+
+.whoWeAreContent p {
+    text-align: start;
+    font-size: 14px;
+    line-height: 17px;
+}
+
 /*pixel art*/
 .megaManPic{
     position: absolute;
