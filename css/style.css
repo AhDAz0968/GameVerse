@@ -386,7 +386,7 @@ body{
     
     background-color: black;
 
-    border: 3px solid var(--button);
+    border: 15px double var(--button);
     border-radius: 8px;
 
     margin-bottom: 150px;
@@ -412,7 +412,7 @@ body{
     background-color: black;
     color: white;
 
-    border: 3px solid var(--button);
+    border: 15px double var(--button);
     border-radius: 8px;
 
     display: flex;
@@ -426,6 +426,7 @@ body{
 
     max-width: auto;
 
+    position: relative;
 }
 
 .ListGenresForYou{
@@ -436,7 +437,7 @@ body{
     background-color: black;
     color: white;
 
-    border: 3px solid var(--button);
+    border: 15px double var(--button);
     border-radius: 8px;
 
     display: flex;
@@ -449,6 +450,8 @@ body{
     padding: 20px;
 
     max-width: auto;
+
+    position: relative;
 }
 
 /*Top Game Page*/
@@ -882,6 +885,8 @@ body{
 }
 
 .myP{
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -944,20 +949,31 @@ body{
 .DoomGuy{
     position: absolute;
 
-    width: 80px;
+    width: 90px;
     bottom: 100%;
     left: 20px;
     transform: translateY(-1px);
     image-rendering: pixelated;
 }
 
-.DanteAndVirgil{
+.rebalArmyLaugh{
     position: absolute;
 
-    width: 250px;
+    width: 80px;
     bottom: 100%;
-    left: 220px;
-    transform: translateY(1px);
+    left: 200px;
+    transform: translateY(-2px);
+    image-rendering: pixelated;
+}
+
+.marcoKnife{
+    position: absolute;
+
+    width: 170px;
+    bottom: 100%;
+    left: 50px;
+
+    transform: translateY(-2px);
     image-rendering: pixelated;
 }
 
@@ -1006,6 +1022,58 @@ body{
 
     right: 200px;
     bottom: 1px;
+
+    image-rendering: pixelated;
+}
+
+.marcoThumpUp{
+    position: absolute;
+
+    width: 100px;
+
+    bottom: 100%;
+    left: 20px;
+
+    image-rendering: pixelated;
+}
+
+.AriShooting{
+    position: absolute;
+    height: 100px;
+    bottom: 100%;
+    left: 30%;
+    transform: translateY(1px);
+    image-rendering: pixelated;
+
+    z-index: 2;
+}
+
+.PtolemaicArmyTank{
+   position: absolute;
+    width: 160px;
+    bottom: 100%;
+    left: 53%;
+    transform: translateY(-5px) scaleX(-1);
+    image-rendering: pixelated;
+    
+    z-index: 1;
+}
+
+.shtting{
+    position: absolute;
+
+    width: 130px;
+    right: 50px;
+    bottom: 0;
+
+    image-rendering: pixelated;
+}
+.goofyAhhSoldier{
+    position: absolute;
+    width: 220px;
+    bottom: 100%;
+    transform: translateY(7px);
+    left: 20%;
 
     image-rendering: pixelated;
 }
